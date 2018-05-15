@@ -2,7 +2,19 @@
   <div class="card">
     <div class="card-header">Liste des contacts</div>
     <div class="card-block container-fluid spacer">
-
+      <table class="table tabel-striped">
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Telephone</th>
+          <th>Email</th>
+        </tr>
+        <tr *ngFor="let c of pageContacts">
+          <td>{{c.id}}</td>
+          <td>{{c.name}}</td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>
